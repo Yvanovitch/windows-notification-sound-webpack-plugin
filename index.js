@@ -11,7 +11,7 @@ class WindowsNotificationSound {
                 exec(`powershell "[console]::beep(500,300)"`)
             }
             if(message != previousMessage) {
-                console.log('Progression ', percent == ' 1 ' ? '100%' : message,' ', new Date().toLocaleString().replace(',',''))
+                console.log(new Date().toLocaleString().replace(',',''),' Progression ', percent == ' 1 ' ? '100%' : message)
                 previousMessage = message
             }
         })
